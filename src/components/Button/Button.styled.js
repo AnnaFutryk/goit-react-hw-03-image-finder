@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const ButtonLoadMore = styled.button`
   display: inline-block;
   margin-left: 50%;
-  margin-top: 20px;
   margin-bottom: 28px;
   transform: translateX(-50%);
   min-width: 60;
