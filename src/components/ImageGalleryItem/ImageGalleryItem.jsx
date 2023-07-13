@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Modal from 'components/Modal/Modal';
 import { Component } from 'react';
+import { ImgItem, Item } from './ImageGalleryItem.styled';
 
 class ImageGalleryItem extends Component {
   //стан модалки
@@ -20,8 +21,8 @@ class ImageGalleryItem extends Component {
 
     return (
       <>
-        <li>
-          <img
+        <Item>
+          <ImgItem
             src={image.webformatURL}
             alt={image.tags}
             onClick={this.toggleModal}
@@ -33,7 +34,7 @@ class ImageGalleryItem extends Component {
               onClose={this.toggleModal}
             />
           )}
-        </li>
+        </Item>
       </>
     );
   }
